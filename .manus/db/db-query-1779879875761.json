@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, title, LEFT(content, 200) as content_preview FROM blog_posts WHERE id = 30001;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user whh4DWNQDVssA6f.root --database SckqfAEKum3y7MUd9ehQ4K --execute SELECT id, title, LEFT(content, 200) as content_preview FROM blog_posts WHERE id = 30001;",
+  "rows": [
+    {
+      "id": "30001",
+      "title": "Colesterol: tratar não é opinião, é causalidade",
+      "content_preview": "## Colesterol é causa de infarto — isso não é debate"
+    }
+  ],
+  "messages": [
+    "Existe uma narrativa recorrente nas redes sociais de que o colesterol alto \"não faz mal\" ou que \"a ciência mudou de ideia\". Não mudou. A relação e"
+  ],
+  "stdout": "id\ttitle\tcontent_preview\n30001\tColesterol: tratar não é opinião, é causalidade\t## Colesterol é causa de infarto — isso não é debate\n\nExiste uma narrativa recorrente nas redes sociais de que o colesterol alto \"não faz mal\" ou que \"a ciência mudou de ideia\". Não mudou. A relação e\n",
+  "stderr": "",
+  "execution_time_ms": 1166
+}

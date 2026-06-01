@@ -1,0 +1,4 @@
+🔍 Node: não encontrado
+🔍 npm: não encontrado
+
+❌ Node.js não encontrado. Instale em https://nodejs.org

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquear painel administrativo
+Disallow: /admin
+Disallow: /admin/
+
+# Bloquear rotas de API
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://brunomiotocardiologista.com/sitemap.xml

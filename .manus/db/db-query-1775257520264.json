@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `appointments` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`patientName` varchar(255) NOT NULL,\n\t`patientEmail` varchar(320) NOT NULL,\n\t`patientPhone` varchar(30) NOT NULL,\n\t`consultationType` varchar(100) NOT NULL,\n\t`appointmentDate` datetime NOT NULL,\n\t`notes` text,\n\t`status` enum('pending','confirmed','cancelled','completed') NOT NULL DEFAULT 'pending',\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `appointments_id` PRIMARY KEY(`id`)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user whh4DWNQDVssA6f.root --database SckqfAEKum3y7MUd9ehQ4K --execute CREATE TABLE `appointments` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`patientName` varchar(255) NOT NULL,\n\t`patientEmail` varchar(320) NOT NULL,\n\t`patientPhone` varchar(30) NOT NULL,\n\t`consultationType` varchar(100) NOT NULL,\n\t`appointmentDate` datetime NOT NULL,\n\t`notes` text,\n\t`status` enum('pending','confirmed','cancelled','completed') NOT NULL DEFAULT 'pending',\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `appointments_id` PRIMARY KEY(`id`)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 239
+}
