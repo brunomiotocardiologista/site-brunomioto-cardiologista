@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE blog_posts SET coverImage = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663487163811/SckqfAEKum3y7MUd9ehQ4K/blog-aterosclerose-cover-ecC8caETW8vcHtZkaoLXzf.webp' WHERE id = 70001;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user whh4DWNQDVssA6f.root --database SckqfAEKum3y7MUd9ehQ4K --execute UPDATE blog_posts SET coverImage = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663487163811/SckqfAEKum3y7MUd9ehQ4K/blog-aterosclerose-cover-ecC8caETW8vcHtZkaoLXzf.webp' WHERE id = 70001;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 572
+}
