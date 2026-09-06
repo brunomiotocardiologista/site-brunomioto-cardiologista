@@ -1,0 +1,238 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Editorial Cream Palette */
+  --cream: oklch(97% 0.015 85);
+  --cream-dark: oklch(93% 0.02 80);
+  --cream-deeper: oklch(88% 0.025 78);
+  /* Medical Blue */
+  --medical-blue: oklch(38% 0.12 240);
+  --medical-blue-light: oklch(55% 0.1 240);
+  --medical-blue-pale: oklch(92% 0.04 240);
+  --navy: oklch(22% 0.08 240);
+  /* Ink & Text */
+  --ink: oklch(12% 0.02 240);
+  --ink-light: oklch(35% 0.03 240);
+  --ink-muted: oklch(55% 0.025 240);
+  --border-fine: oklch(85% 0.015 240);
+  --gold-accent: oklch(72% 0.08 75);
+  /* Semantic */
+  --primary: var(--medical-blue);
+  --primary-foreground: oklch(99% 0.005 240);
+  --sidebar-primary: var(--medical-blue);
+  --sidebar-primary-foreground: oklch(99% 0.005 240);
+  --chart-1: oklch(55% 0.1 240);
+  --chart-2: oklch(45% 0.11 240);
+  --chart-3: oklch(38% 0.12 240);
+  --chart-4: oklch(30% 0.1 240);
+  --chart-5: oklch(22% 0.08 240);
+  --radius: 0.25rem;
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: oklch(99% 0.008 85);
+  --card-foreground: var(--ink);
+  --popover: oklch(99% 0.008 85);
+  --popover-foreground: var(--ink);
+  --secondary: var(--cream-dark);
+  --secondary-foreground: var(--ink);
+  --muted: var(--cream-dark);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--medical-blue-pale);
+  --accent-foreground: var(--medical-blue);
+  --destructive: oklch(55% 0.2 25);
+  --destructive-foreground: oklch(99% 0.005 25);
+  --border: var(--border-fine);
+  --input: var(--border-fine);
+  --ring: var(--medical-blue-light);
+  --sidebar: var(--cream-dark);
+  --sidebar-foreground: var(--ink);
+  --sidebar-accent: var(--medical-blue-pale);
+  --sidebar-accent-foreground: var(--medical-blue);
+  --sidebar-border: var(--border-fine);
+  --sidebar-ring: var(--medical-blue-light);
+}
+
+.dark {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-500);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.85 0.005 65);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.85 0.005 65);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.85 0.005 65);
+  --secondary: oklch(0.24 0.006 286.033);
+  --secondary-foreground: oklch(0.7 0.005 65);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground:  oklch(0.92 0.005 65);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.488 0.243 264.376);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.85 0.005 65);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+  .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  .font-cormorant { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .editorial-line { width: 60px; height: 1px; background: var(--medical-blue); display: block; }
+  .text-ink { color: var(--ink); }
+  .text-ink-light { color: var(--ink-light); }
+  .text-ink-muted { color: var(--ink-muted); }
+  .text-medical-blue { color: var(--medical-blue); }
+  .text-gold { color: var(--gold-accent); }
+  .bg-cream { background-color: var(--cream); }
+  .bg-cream-dark { background-color: var(--cream-dark); }
+  .bg-cream-deeper { background-color: var(--cream-deeper); }
+  .bg-medical-blue { background-color: var(--medical-blue); }
+  .bg-medical-blue-pale { background-color: var(--medical-blue-pale); }
+  .bg-navy { background-color: var(--navy); }
+  .prose-editorial { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.125rem; line-height: 1.8; color: var(--ink-light); }
+  .prose-editorial h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--ink); margin-top: 2.5rem; margin-bottom: 1.25rem; }
+  .prose-editorial h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--cream-deeper); }
+  .prose-editorial h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: var(--ink); margin-top: 1.75rem; margin-bottom: 0.75rem; }
+  .prose-editorial h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .prose-editorial p { margin-bottom: 1.25rem; }
+  .prose-editorial strong, .prose-editorial b { font-weight: 700; color: var(--ink); }
+  .prose-editorial em, .prose-editorial i { font-style: italic; }
+  .prose-editorial ul { list-style-type: disc; padding-left: 1.75rem; margin-bottom: 1.25rem; }
+  .prose-editorial ol { list-style-type: decimal; padding-left: 1.75rem; margin-bottom: 1.25rem; }
+  .prose-editorial li { margin-bottom: 0.5rem; line-height: 1.7; }
+  .prose-editorial blockquote { border-left: 3px solid var(--medical-blue); padding: 0.5rem 1.25rem; margin: 1.5rem 0; font-style: italic; color: var(--ink-light); background: var(--medical-blue-pale); border-radius: 0 4px 4px 0; }
+  .prose-editorial a { color: var(--medical-blue); text-decoration: underline; text-underline-offset: 3px; }
+  .prose-editorial a:hover { opacity: 0.75; }
+  .prose-editorial hr { border: none; border-top: 1px solid var(--cream-deeper); margin: 2rem 0; }
+  .prose-editorial code { background: var(--cream-deeper); padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.875em; font-family: monospace; }
+  .prose-editorial pre { background: var(--cream-deeper); padding: 1rem; border-radius: 6px; overflow-x: auto; margin-bottom: 1.25rem; }
+  .prose-editorial table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.95rem; }
+  .prose-editorial th { background: var(--medical-blue); color: white; padding: 0.6rem 0.75rem; text-align: left; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; }
+  .prose-editorial td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--cream-deeper); }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--cream-dark); }
+  ::-webkit-scrollbar-thumb { background: var(--border-fine); border-radius: 3px; }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
