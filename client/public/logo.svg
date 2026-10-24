@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <!-- Icon: stylized figure with heart -->
+  <g transform="translate(10, 5) scale(0.45)">
+    <!-- Head circle -->
+    <circle cx="100" cy="32" r="22" fill="none" stroke="#0d2a4e" stroke-width="3.5"/>
+    <!-- Body outline - torso/shoulders -->
+    <path d="M18,100 Q18,72 45,68 L100,64 L155,68 Q182,72 182,100 L182,148 Q182,168 160,178 Q130,190 100,190 Q70,190 40,178 Q18,168 18,148 Z" fill="none" stroke="#0d2a4e" stroke-width="3.5"/>
+    <!-- Heart symbol in center -->
+    <path d="M100,128 C100,128 72,108 72,90 C72,78 82,71 91,74 C96,76 100,83 100,83 C100,83 104,76 109,74 C118,71 128,78 128,90 C128,108 100,128 100,128 Z" fill="none" stroke="#0d2a4e" stroke-width="3"/>
+    <!-- Loop inside heart -->
+    <path d="M88,100 C88,96 93,93 98,96 C99.5,97 100,99 100,99 C100,99 100.5,97 102,96 C107,93 112,96 112,100 C112,104 107,107 102,104 C100.5,103 100,101 100,101 C100,101 99.5,103 98,104 C93,107 88,104 88,100 Z" fill="none" stroke="#0d2a4e" stroke-width="2"/>
+  </g>
+  <!-- Text: Bruno Mioto -->
+  <text x="108" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#0d2a4e" font-weight="400">Bruno Mioto</text>
+  <!-- Subtitle -->
+  <text x="108" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#0d2a4e" font-style="italic" font-weight="300">Medicina e Cardiologia</text>
+</svg>
