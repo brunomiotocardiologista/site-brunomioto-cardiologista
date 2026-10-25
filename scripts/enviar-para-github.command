@@ -1,103 +1,80 @@
 #!/bin/bash
-echo "Iniciando envio do código para o GitHub..."
-
-# Token armazenado fora do repositório (nunca commitar este arquivo com o token)
-TOKEN_FILE="$HOME/Desktop/Claude Cowork/.github-token"
-
-if [ ! -f "$TOKEN_FILE" ]; then
-  echo "❌ Arquivo de token não encontrado: $TOKEN_FILE"
-  echo "   Crie o arquivo com seu GitHub Personal Access Token e tente novamente."
-  echo "Pressione Enter para fechar."
-  read
-  exit 1
-fi
-
-GITHUB_TOKEN=$(cat "$TOKEN_FILE" | tr -d '[:space:]')
-REPO_URL="https://${GITHUB_TOKEN}@github.com/brunomiotocardiologista/site-brunomioto-cardiologista.git"
+# --------------------------------------------------------------------
+# Publica o site. Fluxo git normal desde 24/10/2026: um commit por
+# mudança, push comum para a main (sem -f), histórico preservado.
+# O Railway detecta o push na main e redeploya. O build leva perto
+# de dez minutos e, até lá, o site responde a versão antiga.
+#
+# O token fica em ~/Desktop/Claude Cowork/.github-token e é lido pelo
+# credential helper do .git/config local, nunca entra na URL.
+# --------------------------------------------------------------------
 
 SITE_DIR="$HOME/Desktop/Claude Cowork/site_brunomioto"
-TEMP_DIR="/tmp/site_deploy_$$"
 
-cp -r "$SITE_DIR" "$TEMP_DIR"
-cd "$TEMP_DIR"
-
-# Remover qualquer .git anterior
-rm -rf .git
-
-git init
-git config user.email "brunomioto@gmail.com"
-git config user.name "Bruno Mioto"
-git add .
-
-# --------------------------------------------------------------------
-# TRAVA DE SEGURANÇA
-# O repositório no GitHub é PÚBLICO e este script publica a pasta
-# inteira. Antes de enviar, varrer o que está prestes a ir e abortar
-# se encontrar credencial. Em 09/08/2026 a senha do MySQL de produção
-# ficou exposta por meses exatamente por não existir esta checagem.
-# --------------------------------------------------------------------
-echo ""
-echo "Verificando se há credenciais no que será publicado..."
-
-ACHOU=""
-# String de conexão com usuário e senha (mysql://, postgres://, mongodb://)
-if git grep --cached -I -l -E '(mysql|postgres|postgresql|mongodb)(\+srv)?://[^ "'"'"']+:[^ "'"'"']+@' -- . 2>/dev/null | grep -q .; then
-  ACHOU="sim"
+parar() {
   echo ""
-  echo "String de conexão de banco encontrada em:"
-  git grep --cached -I -l -E '(mysql|postgres|postgresql|mongodb)(\+srv)?://[^ "'"'"']+:[^ "'"'"']+@' -- . 2>/dev/null
-fi
-
-# Token do GitHub
-if git grep --cached -I -l -E '(ghp_|github_pat_|gho_|ghs_)[A-Za-z0-9_]{20,}' -- . 2>/dev/null | grep -q .; then
-  ACHOU="sim"
+  echo "$1"
   echo ""
-  echo "Token do GitHub encontrado em:"
-  git grep --cached -I -l -E '(ghp_|github_pat_|gho_|ghs_)[A-Za-z0-9_]{20,}' -- . 2>/dev/null
-fi
-
-# Chave de API genérica (OpenAI, Anthropic, Google)
-if git grep --cached -I -l -E '(sk-[A-Za-z0-9_-]{20,}|sk-ant-[A-Za-z0-9_-]{20,}|AIza[A-Za-z0-9_-]{30,})' -- . 2>/dev/null | grep -q .; then
-  ACHOU="sim"
-  echo ""
-  echo "Chave de API encontrada em:"
-  git grep --cached -I -l -E '(sk-[A-Za-z0-9_-]{20,}|sk-ant-[A-Za-z0-9_-]{20,}|AIza[A-Za-z0-9_-]{30,})' -- . 2>/dev/null
-fi
-
-if [ -n "$ACHOU" ]; then
-  echo ""
-  echo "=================================================================="
-  echo "  DEPLOY ABORTADO"
-  echo ""
-  echo "  Foi encontrada credencial nos arquivos acima. Eles iriam para"
-  echo "  um repositório PÚBLICO."
-  echo ""
-  echo "  O que fazer: tire o arquivo da pasta site_brunomioto/ ou"
-  echo "  acrescente o caminho dele ao .gitignore, e rode de novo."
-  echo ""
-  echo "  Mostre esta janela para o Claude se tiver dúvida."
-  echo "=================================================================="
-  echo ""
-  cd /
-  rm -rf "$TEMP_DIR"
+  echo "Nada foi publicado. Mostre esta janela para o Claude."
   echo "Pressione Enter para fechar."
   read
   exit 1
+}
+
+cd "$SITE_DIR" || parar "Pasta do site não encontrada: $SITE_DIR"
+[ -d .git ] || parar "A pasta do site não tem .git."
+[ "$(git branch --show-current)" = "main" ] || parar "A pasta não está na branch main."
+git remote get-url origin | grep -q "@" && parar "A URL do remote tem credencial embutida. Corrigir antes de publicar."
+
+echo "Conferindo o GitHub..."
+git fetch -q origin main || parar "Não consegui falar com o GitHub."
+git merge-base --is-ancestor origin/main HEAD || parar "A main do GitHub tem commits que a pasta não tem. Não vou sobrescrever."
+
+echo ""
+echo "Validando o seed.ts..."
+node scripts/validar-seed.mjs || parar "O seed.ts tem problema. Publicar assim pode derrubar o site."
+node --experimental-strip-types --check server/seed.ts || parar "O seed.ts tem erro de sintaxe."
+
+# 1. Commit do que mudou na pasta, se houver
+if [ -n "$(git status --porcelain)" ]; then
+  git add -A
+  echo ""
+  echo "O que mudou desde a última publicação:"
+  git diff --cached --stat
+  echo ""
+  scripts/verificar-credenciais.sh --staged || { git reset -q; parar "Commit cancelado."; }
+  echo ""
+  echo "Descreva a mudança em uma linha (Enter usa a data):"
+  read MSG
+  [ -z "$MSG" ] && MSG="Atualização do site $(date '+%Y-%m-%d %H:%M')"
+  git commit -q -m "$MSG" || { git reset -q; parar "O commit falhou."; }
 fi
 
-echo "Nenhuma credencial encontrada. Seguindo com o envio."
-echo ""
+# 2. Push do que ainda não está no GitHub
+PENDENTES=$(git log --oneline origin/main..HEAD)
+if [ -z "$PENDENTES" ]; then
+  echo ""
+  echo "Nada novo para publicar. A pasta já está igual ao GitHub."
+  echo "Pressione Enter para fechar."
+  read
+  exit 0
+fi
 
-git commit -m "Deploy - $(date '+%Y-%m-%d %H:%M')"
-git branch -M main
-git remote add origin "$REPO_URL"
-git push -f -u origin main
-
 echo ""
-if [ $? -eq 0 ]; then
-  echo "✅ Código enviado para o GitHub com sucesso!"
+echo "Commits que vão para o ar:"
+echo "$PENDENTES"
+echo ""
+echo "Publicar agora? Digite s e Enter para confirmar."
+read OK
+[ "$OK" = "s" ] || parar "Publicação cancelada. Os commits ficam na pasta, prontos para a próxima vez."
+
+if git push origin main; then
+  echo ""
+  echo "Código enviado para o GitHub. O Railway leva perto de dez minutos"
+  echo "para publicar. Conferir nas abas Build e Deploy do painel, e no"
+  echo "log a linha [Seed] Done!"
 else
-  echo "❌ Algo deu errado. Mostre esta janela para o Claude."
+  parar "O push falhou."
 fi
 echo "Pressione Enter para fechar."
 read

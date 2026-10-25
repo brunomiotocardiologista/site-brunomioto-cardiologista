@@ -961,7 +961,7 @@ Com o tempo, células musculares lisas migram para a área e depositam colágeno
 
 Essa distinção é clinicamente fundamental.
 
-A **placa estável** tem uma cápsula fibrosa espessa e um núcleo lipídico pequeno. Ela pode causar sintomas de esforço (como angina) se estreitar bastante a artéria, mas raramente se rompe. O tratamento reduz os sintomas e estabiliza a placa.
+A **placa estável** tem uma cápsula fibrosa espessa e um núcleo lipídico pequeno. Ela pode causar sintomas de esforço (como [angina](/blog/stent-ou-tratamento-clinico-doenca-coronaria-cronica)) se estreitar bastante a artéria, mas raramente se rompe. O tratamento reduz os sintomas e estabiliza a placa.
 
 A **placa instável** (ou vulnerável) tem uma cápsula fibrosa fina, um núcleo lipídico grande e muito inflamação ativa. Ela pode causar obstrução pequena na artéria, mas representar alto risco, porque tem grande probabilidade de ruptura. Quando a cápsula rompe, o conteúdo da placa entra em contato com o sangue e desencadeia a formação de um trombo (coágulo) em segundos. Esse trombo pode obstruir completamente a artéria e causar um infarto agudo.
 
@@ -1060,7 +1060,7 @@ Há uma segunda limitação, mais importante: o exame enxerga cálcio, não plac
 
 ## Meu escore deu alto. E agora?
 
-Primeiro, a parte que ninguém diz em voz alta: escore alto não é sentença de infarto e não significa que você precisa de cateterismo. Ele não mede entupimento, mede quantidade de doença.
+Primeiro, a parte que ninguém diz em voz alta: escore alto não é sentença de infarto e não significa que você [precisa de cateterismo](/blog/stent-ou-tratamento-clinico-doenca-coronaria-cronica). Ele não mede entupimento, mede quantidade de doença.
 
 O que muda, na prática:
 
@@ -1160,7 +1160,7 @@ Na prática, três coisas mudam:
 
 **O controle dos outros fatores aperta.** Pressão arterial, glicemia, peso, tabagismo e sono passam a ter alvo, não apenas recomendação genérica.
 
-Vale dizer o que não muda: ter placa não significa precisar de cateterismo, stent ou cirurgia. Esses procedimentos tratam obstrução que limita o fluxo, e aterosclerose subclínica, por definição, não é isso. A placa pequena e estável se trata com remédio e estilo de vida, e pode inclusive estabilizar e reduzir, assunto do artigo sobre [placa de aterosclerose](/blog/placa-de-aterosclerose-o-que-e-como-se-forma-e-se-pode-regredir).
+Vale dizer o que não muda: ter placa não significa precisar de cateterismo, [stent ou cirurgia](/blog/stent-ou-tratamento-clinico-doenca-coronaria-cronica). Esses procedimentos tratam obstrução que limita o fluxo, e aterosclerose subclínica, por definição, não é isso. A placa pequena e estável se trata com remédio e estilo de vida, e pode inclusive estabilizar e reduzir, assunto do artigo sobre [placa de aterosclerose](/blog/placa-de-aterosclerose-o-que-e-como-se-forma-e-se-pode-regredir).
 
 ## E se o exame não encontrar nada?
 
@@ -1199,6 +1199,88 @@ Quem já teve infarto, derrame ou colocou stent não precisa procurar: a doença
 Aterosclerose subclínica é, no fundo, uma oportunidade: a chance de tratar a doença na fase em que ela ainda não cobrou nada. Como **cardiologista em São Paulo** dedicado à prevenção cardiovascular, meu trabalho na consulta é decidir com você se vale procurar, qual exame faz sentido no seu caso e o que fazer com o que for encontrado.
 
 Este artigo é informativo e não substitui a consulta médica.`,
+  },
+  {
+    id: 19,
+    title: "Stent ou tratamento com remédios? Como se decide na doença coronária crônica",
+    slug: "stent-ou-tratamento-clinico-doenca-coronaria-cronica",
+    excerpt: "Uma obstrução na artéria do coração nem sempre pede stent. Veja o que os grandes estudos mostram e como se decide entre procedimento e tratamento clínico na doença coronária crônica.",
+    categoryId: 1,
+    coverImage: "/stent-tratamento-clinico-cover.webp",
+    content: `## Achei uma obstrução no coração. E agora?
+
+O exame mostrou uma obstrução numa artéria do coração, e a primeira ideia que vem é "precisa desentupir". Muita gente chega ao consultório com essa dúvida, às vezes com o cateterismo já marcado, em busca de uma segunda opinião.
+
+A resposta depende do que o tratamento precisa resolver. Na doença coronária crônica, ele tem dois objetivos: aliviar o sintoma, quando existe, e reduzir o risco de infarto e de morte. O stent pode ajudar no primeiro e, em situações específicas, no segundo. O tratamento com remédios age nos dois, em todos os pacientes.
+
+## Doença crônica não é o mesmo que infarto
+
+No **infarto agudo**, a artéria fecha de repente e o músculo do coração começa a sofrer. Ali, abrir a artéria o mais rápido possível com angioplastia salva vidas, e não existe dúvida. É outro cenário, explicado no artigo sobre [infarto do miocárdio](/blog/infarto-do-miocardio-sintomas-prevencao-e-o-que-fazer-em-emergencia).
+
+Na **doença arterial coronária crônica**, também chamada de síndrome coronariana crônica, a placa de gordura estreita a artéria aos poucos, ao longo de anos. A pessoa pode sentir **angina**, a dor ou o aperto no peito que aparece no esforço e melhora com o repouso, ou pode não sentir nada. Nesse caso existe tempo para avaliar com calma, e é aqui que a pergunta "stent ou remédio" faz sentido.
+
+## A base que todo paciente faz
+
+Antes de falar de procedimento, vale dizer o que não muda. Todo paciente com doença coronária faz o chamado **tratamento clínico otimizado**:
+
+1. Remédio para baixar o colesterol, em geral uma estatina, com meta de **LDL**, o colesterol ruim, mais baixa que a da população geral. Os números estão no artigo sobre [colesterol alto](/blog/colesterol-alto-entenda-os-numeros-e-as-metas-que-realmente-importam).
+2. Antiagregante, como a aspirina, para diminuir a chance de formar coágulo.
+3. Controle da pressão, da glicemia e do peso, e parar de fumar.
+4. Remédio para angina, quando há sintoma.
+
+O stent não substitui nada disso. Quem coloca stent continua com os mesmos remédios, e por um período ainda recebe mais um antiagregante. O tratamento clínico cuida da placa em todas as artérias, e não só no ponto que apareceu no exame.
+
+## O que os grandes estudos mostram
+
+Dois estudos grandes testaram se colocar stent de rotina, em quem está estável, reduz infarto e morte.
+
+O estudo **COURAGE** (2007) acompanhou 2.287 pacientes com doença coronária estável e isquemia comprovada. Metade recebeu angioplastia mais tratamento clínico, e a outra metade só o tratamento clínico. Em 4,6 anos, morte ou infarto aconteceram em 19,0% do grupo do stent e em 18,5% do grupo dos remédios, sem diferença entre eles.
+
+O estudo **ISCHEMIA** (2020) foi maior: 5.179 pacientes com isquemia moderada ou grave nos exames. Fazer o cateterismo e tratar a obstrução logo no início não reduziu os eventos cardiovasculares nem a mortalidade num acompanhamento de 3,2 anos. O grupo do procedimento teve menos infarto espontâneo ao longo do tempo e mais infarto ligado ao próprio procedimento no começo. Com sete anos de seguimento, houve menos morte de causa cardíaca no grupo invasivo. A mortalidade total, porém, ficou igual nos dois grupos, segundo as diretrizes brasileira de 2025 e europeia de 2024.
+
+O ISCHEMIA deixou dois grupos de fora. Um é o de quem tem lesão importante no tronco da coronária esquerda, a artéria que leva sangue para a maior parte do coração. O outro é o de quem tem a **fração de ejeção**, a medida da força de bombeamento do coração, abaixo de 35%. O resultado vale para o paciente estável, fora desses grupos.
+
+Por que o stent muda pouco o risco de infarto? Porque o infarto costuma começar numa placa que se rompe, e essa placa muitas vezes não é a mais apertada. O stent trata um ponto. O remédio age na doença da artéria inteira e ajuda a pacificar as placas, que ficam mais firmes e rompem menos. Esse é o assunto do artigo sobre [placa de aterosclerose](/blog/placa-de-aterosclerose-o-que-e-como-se-forma-e-se-pode-regredir).
+
+## Quando o procedimento ajuda
+
+**Angina que limita a vida, apesar dos remédios.** Aqui a angioplastia tem indicação forte na diretriz brasileira de 2025. O estudo **ORBITA-2** (2023) incluiu 301 pessoas com angina e isquemia comprovada, praticamente sem remédio para angina. Metade recebeu angioplastia e metade um procedimento simulado, sem saber qual tinha recebido. Em 12 semanas, o escore de angina ficou em 2,9 no grupo do stent e em 5,6 no grupo do procedimento simulado. É a evidência mais forte de que o stent alivia o sintoma.
+
+**Anatomia de maior risco.** Em duas situações a diretriz brasileira recomenda a **cirurgia de revascularização**, a ponte de safena e de mamária, para reduzir infarto e aumentar a sobrevida. A primeira é a lesão importante no tronco da coronária esquerda. A segunda é a doença em vários vasos com a força do coração reduzida. Em parte desses casos, quando as lesões são favoráveis, a angioplastia pode ser uma opção.
+
+**Coração fraco por doença coronária.** Mesmo aqui o stent não é automático. O estudo **REVIVED** (2022) incluiu 700 pacientes com fração de ejeção de 35% ou menos. Somar a angioplastia ao tratamento clínico não reduziu morte nem internação por insuficiência cardíaca: 37,2% contra 38,0%, em cerca de 41 meses.
+
+## Como a decisão é tomada
+
+Cinco coisas entram na conta:
+
+1. **O sintoma:** se existe e quanto atrapalha a vida.
+2. **A isquemia:** quanto do músculo do coração sofre com a falta de sangue. Ela aparece no teste de esforço, na cintilografia, na ressonância ou na **reserva de fluxo fracionada**, uma medida da pressão dentro da artéria feita durante o cateterismo.
+3. **A anatomia:** onde estão as lesões e quantas artérias estão acometidas.
+4. **A força do coração**, medida pelo ecocardiograma.
+5. **A preferência do paciente**, depois de entender cada caminho.
+
+Quando dois caminhos são bons, digo qual recomendo e por quê, e a escolha é do paciente. Nos casos mais complexos, a diretriz brasileira prevê a discussão pelo Heart Team, o time formado pelo cardiologista clínico, pelo especialista em cateterismo e pelo cirurgião.
+
+## FAQ: perguntas frequentes sobre stent e doença coronária crônica
+
+**Tenho uma obstrução de 70%. Preciso de stent?** Não necessariamente. A porcentagem sozinha não decide. Pesam o sintoma, a isquemia, a localização da lesão e a força do coração.
+
+**O stent evita infarto?** Na doença estável, os grandes estudos não mostraram menos morte nem menos infarto no total com o stent de rotina. Ele alivia a angina e tem papel definido nas anatomias de maior risco. No infarto agudo, o cenário é outro, e ali o stent salva vidas.
+
+**Quem coloca stent pode parar os remédios?** Não. O stent trata um ponto da artéria, e os remédios tratam a doença. Depois do stent eles continuam, e o antiagregante costuma ser reforçado por um período.
+
+**Tratamento clínico é não fazer nada?** Não. É tratar a doença com remédios que reduzem o risco de infarto, controlar os fatores de risco e acompanhar de perto. Foi esse tratamento que teve resultado igual ao do stent nos estudos.
+
+**Todo mundo com angina precisa de cateterismo?** Não. Muitos pacientes ficam bem controlados com remédios. O cateterismo entra quando a angina persiste apesar do tratamento ou quando os exames sugerem alto risco.
+
+**Vale pedir uma segunda opinião?** Sim. Antes de um procedimento programado existe tempo para isso.
+
+Todo paciente faz o tratamento clínico. O stent entra para a angina que não cede ou para as anatomias de maior risco, e a decisão é feita caso a caso. Como **cardiologista em São Paulo**, atendo pacientes com doença coronária crônica no InCor e no consultório, muitas vezes para uma segunda opinião antes de um procedimento.
+
+Este artigo é informativo e não substitui a consulta médica.
+
+**Fontes:** Boden WE et al., estudo COURAGE, N Engl J Med 2007 (doi:10.1056/NEJMoa070829). Maron DJ et al., estudo ISCHEMIA, N Engl J Med 2020 (doi:10.1056/NEJMoa1915922). Rajkumar CA et al., estudo ORBITA-2, N Engl J Med 2023 (doi:10.1056/NEJMoa2310610). Perera D et al., estudo REVIVED-BCIS2, N Engl J Med 2022 (doi:10.1056/NEJMoa2206606). Diretriz de Síndrome Coronariana Crônica da SBC, Arq Bras Cardiol 2025 (doi:10.36660/abc.20250619). Diretriz de Síndromes Coronarianas Crônicas da ESC, Eur Heart J 2024 (doi:10.1093/eurheartj/ehae177).`,
   },
 ];
 

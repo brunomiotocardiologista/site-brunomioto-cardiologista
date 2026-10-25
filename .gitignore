@@ -126,6 +126,8 @@ client/public/__manus__/
 scripts/*.mjs
 scripts/*.cjs
 scripts/*.js
+# Exceção: o validador do seed só lê arquivos, nunca conecta no banco.
+!scripts/validar-seed.mjs
 
 # Documentação interna de infraestrutura (histórico de chamado,
 # decisões, painéis). Fica só na máquina do Bruno.
