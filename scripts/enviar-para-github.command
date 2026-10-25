@@ -66,7 +66,10 @@ echo "$PENDENTES"
 echo ""
 echo "Publicar agora? Digite s e Enter para confirmar."
 read OK
-[ "$OK" = "s" ] || parar "Publicação cancelada. Os commits ficam na pasta, prontos para a próxima vez."
+case "$OK" in
+  s|S|sim|Sim|SIM) ;;
+  *) parar "Publicação cancelada. Os commits ficam na pasta, prontos para a próxima vez." ;;
+esac
 
 if git push origin main; then
   echo ""
