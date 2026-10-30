@@ -4,7 +4,8 @@ import { type Server } from "http";
 import { nanoid } from "nanoid";
 import path from "path";
 import { createServer as createViteServer } from "vite";
-import { eq } from "drizzle-orm";
+import { and, desc, eq, ne } from "drizzle-orm";
+import { marked } from "marked";
 import viteConfig from "../../vite.config";
 import { getDb } from "../db";
 import { blogPosts } from "../../drizzle/schema";
@@ -17,6 +18,52 @@ function escapeHtml(str: string): string {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+// Mesma conversao do client/src/pages/BlogPost.tsx (tira o titulo repetido do
+// topo do markdown e usa breaks + gfm), para o texto do servidor bater com o
+// que o leitor ve depois que o React monta.
+function renderMarkdown(content: string): string {
+  try {
+    const cleaned = content.replace(/^#{1,2}[^\n]*\n+/, "");
+    const result = marked.parse(cleaned, { breaks: true, gfm: true });
+    return typeof result === "string" ? result : escapeHtml(content);
+  } catch {
+    return escapeHtml(content);
+  }
+}
+
+/**
+ * Artigo completo em HTML, colocado dentro de <div id="root">. O Google le o
+ * texto e os links na primeira varredura, sem depender de rodar JavaScript
+ * nem de chamar /api/trpc. O React usa createRoot (nao hydrate), entao ao
+ * montar ele substitui este bloco pela pagina normal. E o mesmo conteudo que
+ * o leitor ve, sem nada escondido.
+ */
+function renderArticleHtml(
+  post: { title: string; excerpt: string | null; content: string; publishedAt: Date | null },
+  others: { title: string; slug: string }[]
+): string {
+  const date = post.publishedAt
+    ? new Date(post.publishedAt).toLocaleDateString("pt-BR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        timeZone: "America/Sao_Paulo",
+      })
+    : "";
+  const links = others
+    .map(o => `<li><a href="/blog/${encodeURI(o.slug)}">${escapeHtml(o.title)}</a></li>`)
+    .join("");
+
+  return `<article style="max-width:760px;margin:0 auto;padding:32px 16px;font-family:Georgia,serif;line-height:1.7;color:#0D1B35">
+<nav><a href="/">Dr. Bruno Mioto – Cardiologista</a> / <a href="/blog">Blog</a></nav>
+<h1>${escapeHtml(post.title)}</h1>
+<p>Dr. Bruno Mahler Mioto · Cardiologista CRM 112007-SP${date ? ` · ${date}` : ""}</p>
+${post.excerpt ? `<p><em>${escapeHtml(post.excerpt)}</em></p>` : ""}
+${renderMarkdown(post.content)}
+${links ? `<h2>Outros artigos</h2><ul>${links}</ul>` : ""}
+</article>`;
 }
 
 /**
@@ -62,6 +109,9 @@ async function injectMetaTags(
             title: blogPosts.title,
             excerpt: blogPosts.excerpt,
             coverImage: blogPosts.coverImage,
+            content: blogPosts.content,
+            published: blogPosts.published,
+            publishedAt: blogPosts.publishedAt,
           })
           .from(blogPosts)
           .where(eq(blogPosts.slug, slug))
@@ -144,6 +194,22 @@ async function injectMetaTags(
           /<meta name="twitter:image" content="[^"]*"/,
           `<meta name="twitter:image" content="${ogImage}"`
         );
+
+        // Corpo do artigo no HTML. So para post publicado: rascunho nunca
+        // sai do banco por aqui, igual ao blog.getPost do tRPC.
+        if (post.published) {
+          const others = await db
+            .select({ title: blogPosts.title, slug: blogPosts.slug })
+            .from(blogPosts)
+            .where(and(eq(blogPosts.published, true), ne(blogPosts.slug, slug)))
+            .orderBy(desc(blogPosts.publishedAt));
+          // Callback e nao string: texto com "R$" viraria padrao de substituicao
+          const article = renderArticleHtml(post, others);
+          result = result.replace(
+            '<div id="root"></div>',
+            () => `<div id="root">${article}</div>`
+          );
+        }
       }
     } catch (err) {
       console.error("Error injecting meta tags for blog post:", err);
