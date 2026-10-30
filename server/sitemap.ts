@@ -63,7 +63,7 @@ ${allEntries
   app.get("/robots.txt", (_req, res) => {
     res.set("Content-Type", "text/plain");
     res.send(
-      `User-agent: *\nAllow: /\n\nDisallow: /admin\nDisallow: /admin/\nDisallow: /api/\nDisallow: /__manus__/\n\nSitemap: ${BASE_URL}/sitemap.xml\n`
+      `User-agent: *\nAllow: /\n\nDisallow: /admin\nDisallow: /admin/\nAllow: /api/trpc/\nDisallow: /api/\nDisallow: /__manus__/\n\nSitemap: ${BASE_URL}/sitemap.xml\n`
     );
   });
 }

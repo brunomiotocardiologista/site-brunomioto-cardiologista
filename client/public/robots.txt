@@ -5,7 +5,9 @@ Allow: /
 Disallow: /admin
 Disallow: /admin/
 
-# Bloquear rotas de API
+# Bloquear rotas de API, menos o tRPC: o React busca o texto dos posts
+# em /api/trpc/ e o Google precisa dele para renderizar a página
+Allow: /api/trpc/
 Disallow: /api/
 
 # Bloquear pasta interna de sistema
