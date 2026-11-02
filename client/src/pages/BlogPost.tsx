@@ -20,6 +20,22 @@ function renderMarkdown(content: string): string {
 
 const BASE_URL = "https://brunomiotocardiologista.com";
 
+// Assinatura com CRM e o RQE de cada especialidade anunciada (CFM 2.336/2023).
+// Mesmo texto do AUTHOR_CREDENTIALS em server/_core/vite.ts: mudou um, muda o outro.
+const AUTHOR_CREDENTIALS =
+  "Cardiologista · CRM 112.007-SP · RQE 89316 (Cardiologia) · RQE 89317 (Clínica Médica)";
+
+function formatDatePtBr(d: string | Date | null | undefined): string | null {
+  return d
+    ? new Date(d).toLocaleDateString("pt-BR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        timeZone: "America/Sao_Paulo",
+      })
+    : null;
+}
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
@@ -92,29 +108,25 @@ export default function BlogPost() {
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.setAttribute("data-type", "article-ld");
+    // Mesmo formato do bloco que o servidor entrega (server/_core/vite.ts)
+    const postUrl = `${BASE_URL}/blog/${post.slug}`;
     script.textContent = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+      "@type": "BlogPosting",
       headline: post.title,
       description: description,
-      url: `${BASE_URL}/blog/${post.slug}`,
-      image: post.coverImage || undefined,
-      datePublished: post.publishedAt,
-      author: {
-        "@type": "Physician",
-        name: "Dr. Bruno Mahler Mioto",
-        url: BASE_URL,
-      },
-      publisher: {
-        "@type": "MedicalBusiness",
-        name: "Dr. Bruno Mioto – Medicina e Cardiologia",
-        url: BASE_URL,
-      },
+      image: post.coverImage
+        ? post.coverImage.startsWith("http")
+          ? post.coverImage
+          : `${BASE_URL}${post.coverImage}`
+        : undefined,
+      url: postUrl,
+      mainEntityOfPage: postUrl,
       inLanguage: "pt-BR",
-      medicalAudience: {
-        "@type": "MedicalAudience",
-        audienceType: "Patient",
-      },
+      datePublished: post.publishedAt ?? undefined,
+      dateModified: post.updatedAt ?? post.publishedAt ?? undefined,
+      author: { "@id": `${BASE_URL}/#physician` },
+      publisher: { "@id": `${BASE_URL}/#clinic` },
     });
     document.head.appendChild(script);
 
@@ -165,13 +177,10 @@ export default function BlogPost() {
     );
   }
 
-  const publishedDate = post.publishedAt
-    ? new Date(post.publishedAt).toLocaleDateString("pt-BR", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      })
-    : null;
+  const publishedDate = formatDatePtBr(post.publishedAt);
+  // So aparece quando o texto mudou num dia diferente do da publicacao
+  const updatedDate = formatDatePtBr(post.updatedAt);
+  const revisedDate = updatedDate && updatedDate !== publishedDate ? updatedDate : null;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--cream)" }}>
@@ -229,12 +238,13 @@ export default function BlogPost() {
           <div className="flex flex-wrap items-center gap-4 mb-8 pb-8" style={{ borderBottom: "1px solid var(--border-fine)" }}>
             <div className="flex items-center gap-1.5 text-xs" style={{ color: "var(--ink-muted)", fontFamily: "'Inter', sans-serif" }}>
               <span style={{ color: "var(--medical-blue)", fontWeight: 500 }}>Dr. Bruno Mahler Mioto</span>
-              <span>· Cardiologista CRM 112007-SP</span>
+              <span>· {AUTHOR_CREDENTIALS}</span>
             </div>
             {publishedDate && (
               <div className="flex items-center gap-1.5 text-xs" style={{ color: "var(--ink-muted)", fontFamily: "'Inter', sans-serif" }}>
                 <Calendar className="w-3.5 h-3.5" />
-                {publishedDate}
+                Publicado em {publishedDate}
+                {revisedDate && <> · Atualizado em {revisedDate}</>}
               </div>
             )}
           </div>

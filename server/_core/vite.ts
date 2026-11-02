@@ -40,18 +40,40 @@ function renderMarkdown(content: string): string {
  * montar ele substitui este bloco pela pagina normal. E o mesmo conteudo que
  * o leitor ve, sem nada escondido.
  */
-function renderArticleHtml(
-  post: { title: string; excerpt: string | null; content: string; publishedAt: Date | null },
-  others: { title: string; slug: string }[]
-): string {
-  const date = post.publishedAt
-    ? new Date(post.publishedAt).toLocaleDateString("pt-BR", {
+// Assinatura com CRM e o RQE de cada especialidade anunciada (CFM 2.336/2023).
+// Mesmo texto do BlogPost.tsx: mudou um, muda o outro.
+export const AUTHOR_CREDENTIALS =
+  "Cardiologista · CRM 112.007-SP · RQE 89316 (Cardiologia) · RQE 89317 (Clínica Médica)";
+
+function formatDatePtBr(d: Date | null): string {
+  return d
+    ? new Date(d).toLocaleDateString("pt-BR", {
         day: "numeric",
         month: "long",
         year: "numeric",
         timeZone: "America/Sao_Paulo",
       })
     : "";
+}
+
+/**
+ * Data de atualizacao para o leitor: so aparece quando o texto mudou num dia
+ * diferente do da publicacao. O updatedAt do banco so muda quando o seed
+ * grava um valor diferente (ON UPDATE CURRENT_TIMESTAMP), entao ele marca a
+ * ultima revisao real do post, nao cada deploy.
+ */
+function revisedDate(publishedAt: Date | null, updatedAt: Date | null): string {
+  const pub = formatDatePtBr(publishedAt);
+  const upd = formatDatePtBr(updatedAt);
+  return upd && upd !== pub ? upd : "";
+}
+
+function renderArticleHtml(
+  post: { title: string; excerpt: string | null; content: string; publishedAt: Date | null; updatedAt: Date | null },
+  others: { title: string; slug: string }[]
+): string {
+  const date = formatDatePtBr(post.publishedAt);
+  const revised = revisedDate(post.publishedAt, post.updatedAt);
   const links = others
     .map(o => `<li><a href="/blog/${encodeURI(o.slug)}">${escapeHtml(o.title)}</a></li>`)
     .join("");
@@ -59,7 +81,7 @@ function renderArticleHtml(
   return `<article style="max-width:760px;margin:0 auto;padding:32px 16px;font-family:Georgia,serif;line-height:1.7;color:#0D1B35">
 <nav><a href="/">Dr. Bruno Mioto – Cardiologista</a> / <a href="/blog">Blog</a></nav>
 <h1>${escapeHtml(post.title)}</h1>
-<p>Dr. Bruno Mahler Mioto · Cardiologista CRM 112007-SP${date ? ` · ${date}` : ""}</p>
+<p>Dr. Bruno Mahler Mioto · ${AUTHOR_CREDENTIALS}${date ? ` · Publicado em ${date}` : ""}${revised ? ` · Atualizado em ${revised}` : ""}</p>
 ${post.excerpt ? `<p><em>${escapeHtml(post.excerpt)}</em></p>` : ""}
 ${renderMarkdown(post.content)}
 ${links ? `<h2>Outros artigos</h2><ul>${links}</ul>` : ""}
@@ -112,6 +134,7 @@ async function injectMetaTags(
             content: blogPosts.content,
             published: blogPosts.published,
             publishedAt: blogPosts.publishedAt,
+            updatedAt: blogPosts.updatedAt,
           })
           .from(blogPosts)
           .where(eq(blogPosts.slug, slug))
@@ -194,6 +217,34 @@ async function injectMetaTags(
           /<meta name="twitter:image" content="[^"]*"/,
           `<meta name="twitter:image" content="${ogImage}"`
         );
+
+        // Dados estruturados do artigo, no HTML do servidor para o Google ler
+        // sem JavaScript. Autor ligado ao #physician do index.html. O
+        // BlogPost.tsx troca este bloco (mesmo data-type) ao montar.
+        if (post.published) {
+          const articleLd = {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description,
+            image: ogImage,
+            url: canonicalUrl,
+            mainEntityOfPage: canonicalUrl,
+            inLanguage: "pt-BR",
+            datePublished: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
+            dateModified: (post.updatedAt ?? post.publishedAt)
+              ? new Date((post.updatedAt ?? post.publishedAt) as Date).toISOString()
+              : undefined,
+            author: { "@id": `${SITE_BASE_URL}/#physician` },
+            publisher: { "@id": `${SITE_BASE_URL}/#clinic` },
+          };
+          // "<" escapado para nenhum texto fechar a tag script
+          const ldJson = JSON.stringify(articleLd).replace(/</g, "\\u003c");
+          result = result.replace(
+            "</head>",
+            () => `<script type="application/ld+json" data-type="article-ld">${ldJson}</script></head>`
+          );
+        }
 
         // Corpo do artigo no HTML. So para post publicado: rascunho nunca
         // sai do banco por aqui, igual ao blog.getPost do tRPC.
