@@ -128,6 +128,8 @@ scripts/*.cjs
 scripts/*.js
 # Exceção: o validador do seed só lê arquivos, nunca conecta no banco.
 !scripts/validar-seed.mjs
+# Exceção: a conferência pós-deploy só lê o site público, nunca o banco.
+!scripts/conferir-no-ar.mjs
 
 # Documentação interna de infraestrutura (histórico de chamado,
 # decisões, painéis). Fica só na máquina do Bruno.

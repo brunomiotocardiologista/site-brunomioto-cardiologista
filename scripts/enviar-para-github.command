@@ -79,5 +79,17 @@ if git push origin main; then
 else
   parar "O push falhou."
 fi
+
+# 3. Conferência no site publicado: espera o Railway e confere cada post
+echo ""
+echo "Conferindo o site publicado. Pode levar até 15 minutos; deixe esta janela aberta."
+if node scripts/conferir-no-ar.mjs; then
+  echo ""
+  echo "Tudo certo no ar."
+else
+  echo ""
+  echo "O push foi feito, mas o site publicado tem problema (lista acima)."
+  echo "Mostre esta janela para o Claude."
+fi
 echo "Pressione Enter para fechar."
 read

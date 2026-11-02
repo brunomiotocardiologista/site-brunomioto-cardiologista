@@ -577,7 +577,7 @@ A boa notícia: mesmo perdas modestas de peso (5–10% do peso corporal) produze
 
 O tratamento da obesidade é multidisciplinar. A dieta e o exercício são a base, mas em muitos casos precisam ser complementados por:
 
-**Medicamentos antiobesidade:** como semaglutida (GLP-1), que além de promover perda de peso tem benefícios cardiovasculares comprovados.
+**Medicamentos antiobesidade:** como semaglutida (GLP-1), que além de promover perda de peso tem benefícios cardiovasculares comprovados. Um dos efeitos que os pacientes mais relatam com esses remédios é a diminuição do [food noise, o barulho da comida](/blog/food-noise-barulho-da-comida).
 
 **Cirurgia bariátrica:** para pacientes com IMC ≥ 40, ou ≥ 35 com comorbidades, quando o tratamento clínico falhou. A cirurgia bariátrica reduz significativamente eventos cardiovasculares em longo prazo.
 
@@ -1281,6 +1281,96 @@ Todo paciente faz o tratamento clínico. O stent entra para a angina que não ce
 Este artigo é informativo e não substitui a consulta médica.
 
 **Fontes:** Boden WE et al., estudo COURAGE, N Engl J Med 2007 (doi:10.1056/NEJMoa070829). Maron DJ et al., estudo ISCHEMIA, N Engl J Med 2020 (doi:10.1056/NEJMoa1915922). Rajkumar CA et al., estudo ORBITA-2, N Engl J Med 2023 (doi:10.1056/NEJMoa2310610). Perera D et al., estudo REVIVED-BCIS2, N Engl J Med 2022 (doi:10.1056/NEJMoa2206606). Diretriz de Síndrome Coronariana Crônica da SBC, Arq Bras Cardiol 2025 (doi:10.36660/abc.20250619). Diretriz de Síndromes Coronarianas Crônicas da ESC, Eur Heart J 2024 (doi:10.1093/eurheartj/ehae177).`,
+  },
+  {
+    id: 20,
+    title: "Food noise: o que é o \"barulho da comida\" e por que ele diminui no tratamento",
+    slug: "food-noise-barulho-da-comida",
+    excerpt: "Food noise é pensar em comida o tempo todo, sem querer. Entenda o que é, por que acontece na obesidade e o que muda com remédio e terapia comportamental.",
+    categoryId: 3,
+    coverImage: "/food-noise-cover.webp",
+    content: `## O que é food noise?
+
+Food noise, ou "barulho da comida", é o pensamento sobre comida que aparece sem ser chamado e não sai da cabeça, mesmo sem fome. O termo nasceu entre pessoas em tratamento para obesidade, que perceberam esse barulho diminuir com remédios como a semaglutida e a tirzepatida.
+
+No consultório, a frase costuma ser outra: "penso em comida o tempo todo". A pessoa acabou de almoçar e já está pensando no lanche. Sabe que não está com fome, mas a ideia volta, uma vez atrás da outra.
+
+Em 2025, um grupo de pesquisadores publicou a primeira definição formal: food noise são pensamentos persistentes sobre comida, vividos como indesejados ou desagradáveis, que podem trazer prejuízo social, mental ou físico ([Dhurandhar e colaboradores, Nutrition & Diabetes, 2025](https://doi.org/10.1038/s41387-025-00382-x)). Todo mundo pensa em comida. O que separa o food noise do pensamento comum é a intensidade e a insistência, parecida com a de uma preocupação que não vai embora.
+
+## Food noise é uma doença?
+
+Não. Food noise não é um diagnóstico. É um conceito novo, que a ciência começou a estudar há pouco tempo.
+
+Já existe um questionário validado, de cinco perguntas, para medir a intensidade desse barulho ([Diktas e colaboradores, Obesity, 2025](https://doi.org/10.1002/oby.24216)). Ao mesmo tempo, pesquisadores, entre eles um grupo da Universidade de São Paulo, alertam para o risco de transformar em doença uma experiência que é comum na vida de muita gente ([Brewis e colaboradores, Appetite, 2026](https://doi.org/10.1016/j.appet.2026.108700)).
+
+Na prática, o food noise funciona como um sintoma que ajuda a entender a obesidade.
+
+## Por que esse barulho acontece?
+
+O cérebro foi feito para buscar comida, porque comida é sobrevivência. Ele aprende rápido a ligar um lugar, um horário ou uma situação a um alimento muito saboroso.
+
+Pense no sofá depois do jantar, na chegada em casa à noite ou no café da tarde no trabalho. Se esse cenário foi acompanhado de comida muitas vezes ao longo da vida, o próprio cenário passa a disparar a vontade. Os estudos chamam isso de **reatividade a pistas alimentares** ([Hayashi e colaboradores, Nutrients, 2023](https://doi.org/10.3390/nu15224809)).
+
+Esse foi um dos temas que acompanhei de perto num evento internacional de obesidade em Frankfurt, em outubro. Cada pessoa tem o seu **horário de risco**: o momento do dia em que o barulho fica mais alto e o controle fica mais difícil. É um aprendizado do cérebro, e acontece com qualquer pessoa.
+
+Junto com a vontade vêm pensamentos que dão permissão: "tive um dia difícil, eu mereço", "amanhã eu compenso", "vou comer só um pouco". Eles aparecem rápido, parecem razoáveis e quase nunca levam em conta como você vai se sentir depois.
+
+## Por que ele diminui com a semaglutida e a tirzepatida?
+
+A diminuição do food noise é um dos efeitos que os pacientes mais relatam com a semaglutida e a tirzepatida.
+
+Num estudo com entrevistas de pessoas em tratamento, a redução do barulho da comida apareceu entre os principais benefícios descritos ([de Vere Hunt e colaboradores, JAMA Network Open, 2026](https://doi.org/10.1001/jamanetworkopen.2026.16951)). Um levantamento com 1.659 participantes encontrou o mesmo relato ([Naveed e colaboradores, Diabetes, Obesity and Metabolism, 2025](https://doi.org/10.1111/dom.16405)).
+
+Aqui cabe uma cautela. Até agora, essas informações vêm do que os pacientes contam e de questionários. Ainda não há ensaio clínico que tenha medido o food noise como resultado principal, e o mecanismo exato não está esclarecido.
+
+## O barulho volta?
+
+Pode voltar. Quando o peso se aproxima do limite que aquela dose consegue alcançar, ou quando o remédio é suspenso, muitos pacientes contam que o barulho aumenta de novo.
+
+É uma reação esperada do corpo, sem culpa de quem está em tratamento. Depois de emagrecer, o corpo muda os hormônios da fome e da saciedade de um jeito que aumenta o apetite. Essa mudança dura pelo menos um ano ([Sumithran e colaboradores, New England Journal of Medicine, 2011](https://doi.org/10.1056/NEJMoa1105816)). É um dos motivos pelos quais a obesidade é tratada como doença crônica, com acompanhamento contínuo, como explico no artigo sobre [plano de acompanhamento médico](/blog/plano-de-acompanhamento-medico-o-que-e-e-por-que-pode-mudar-seus-resultados-de-saude).
+
+## O que ajuda além do remédio?
+
+O remédio diminui a vontade. Os pensamentos que dão permissão são trabalhados com terapia comportamental. A diretriz canadense de obesidade em adultos coloca a terapia psicológica e comportamental como parte do tratamento, ao lado da nutrição, da atividade física, dos remédios e da cirurgia ([Wharton e colaboradores, CMAJ, 2020](https://doi.org/10.1503/cmaj.191707)).
+
+Três passos que ajudam:
+
+1. **Descobrir o seu horário de risco.** Quando, onde, com quem e fazendo o quê o barulho fica mais alto.
+2. **Reconhecer o pensamento que dá permissão** no momento em que ele aparece, e trocar por uma pergunta sobre o futuro: "como vou me sentir daqui a uma hora?", "dá para esperar o jantar?".
+3. **Contar ao médico como está o barulho**, além do peso. A intensidade do sintoma ajuda a decidir se a dose está certa.
+
+Nos retornos de obesidade, pergunto pelo food noise e pelo horário de risco antes de perguntar o peso. Assim fica claro que o tratamento cuida do sintoma e da saúde, além do peso.
+
+Para quem tem obesidade, cuidar do apetite também é cuidar do coração. A relação está no artigo sobre [obesidade e coração](/blog/obesidade-e-coracao-como-o-excesso-de-peso-afeta-a-saude-cardiovascular) e, quando há diabetes junto, no de [diabetes e coração](/blog/diabetes-e-coracao-por-que-o-controle-glicemico-e-fundamental-na-cardiologia).
+
+## Quando procurar o médico?
+
+- O pensamento em comida atrapalha o trabalho, o sono ou a convivência.
+- Há episódios de comer muito, com sensação de perda de controle.
+- Você come escondido, vomita, usa laxante ou usa algum remédio para "compensar" o que comeu. Esses sinais pedem avaliação para transtorno alimentar.
+- O excesso de peso vem junto com pressão alta, glicose alterada, apneia do sono ou dor nas articulações.
+- Você pensa em começar um remédio para obesidade. A semaglutida e a tirzepatida exigem prescrição, avaliação e acompanhamento.
+
+## Perguntas frequentes sobre food noise
+
+**Food noise é a mesma coisa que fome?** Não. A fome é a necessidade de comer e passa depois da refeição. O food noise é o pensamento em comida que continua mesmo sem fome.
+
+**Food noise é compulsão alimentar?** Não. A compulsão alimentar é um transtorno, com episódios de comer grande quantidade e sensação de perda de controle. O food noise pode existir sem compulsão. Quando as duas coisas aparecem juntas, a avaliação precisa ser mais cuidadosa.
+
+**Toda pessoa com obesidade tem food noise?** Não. Muitas pessoas com obesidade não descrevem esse barulho, e algumas pessoas sem obesidade descrevem.
+
+**O food noise some de vez com o remédio?** Nem sempre. Ele costuma diminuir, mas pode voltar com o tempo ou depois da suspensão. Por isso o remédio funciona melhor junto com a terapia comportamental e com o acompanhamento médico.
+
+## Conversa no consultório
+
+Se o "penso em comida o tempo todo" faz parte da sua rotina, vale conversar sobre isso numa consulta. Atendo em Pinheiros, em São Paulo, pacientes com obesidade e risco cardiovascular, e o agendamento pode ser feito pelo [WhatsApp do consultório](https://wa.me/5511945556605).
+
+**Dr. Bruno Mioto**, médico cardiologista · CRM 112.007-SP · RQE 89316 (Cardiologia) · RQE 89317 (Clínica Médica)
+Publicado em 01/11/2026 · Revisado em 01/11/2026
+
+Este artigo é informativo e não substitui a consulta médica.
+
+**Fontes:** Dhurandhar EJ et al., Food noise: definition, measurement, and future research directions, Nutr Diabetes 2025 (doi:10.1038/s41387-025-00382-x). Diktas HE et al., Development and validation of the Food Noise Questionnaire, Obesity 2025 (doi:10.1002/oby.24216). Hayashi D et al., What is food noise? A conceptual model of food cue reactivity, Nutrients 2023 (doi:10.3390/nu15224809). Brewis A et al., Food noise: conceptual, methodological, and ethical considerations, Appetite 2026 (doi:10.1016/j.appet.2026.108700). de Vere Hunt I et al., Patient experiences with GLP-1 receptor agonists, JAMA Netw Open 2026 (doi:10.1001/jamanetworkopen.2026.16951). Naveed M et al., GLP-1 medication and weight loss: barriers and motivators among 1659 participants, Diabetes Obes Metab 2025 (doi:10.1111/dom.16405). Wharton S et al., Obesity in adults: a clinical practice guideline, CMAJ 2020 (doi:10.1503/cmaj.191707). Sumithran P et al., Long-term persistence of hormonal adaptations to weight loss, N Engl J Med 2011 (doi:10.1056/NEJMoa1105816).`,
   },
 ];
 
