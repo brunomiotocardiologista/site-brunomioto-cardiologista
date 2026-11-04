@@ -277,7 +277,7 @@ Essa estratificação é feita pelo **cardiologista** e determina quão agressiv
 
 A decisão de iniciar um medicamento para colesterol não depende apenas dos números — depende do risco cardiovascular global do paciente. Para alguns, mudanças no estilo de vida são suficientes. Para outros, especialmente pacientes de alto risco, a medicação é indispensável mesmo com colesterol "apenas levemente elevado".
 
-As **estatinas** são os medicamentos mais usados e com melhor evidência de redução de eventos cardiovasculares. Quando a meta não é atingida com estatina, pode-se adicionar ezetimiba ou inibidores de PCSK9.
+As **estatinas** são os medicamentos mais usados e com melhor evidência de redução de eventos cardiovasculares. Quando a meta não é atingida com estatina, pode-se adicionar [ezetimiba](/blog/estatina-e-ezetimiba-juntas-quando-comecar) ou inibidores de PCSK9.
 
 Se você quer entender seu perfil lipídico e saber se seu tratamento está adequado, agende uma consulta com o Dr. Bruno Mioto, **cardiologista em São Paulo** especializado em prevenção cardiovascular e dislipidemia.`,
   },
@@ -981,7 +981,7 @@ Existem diferentes formas de detectar [aterosclerose subclínica](/blog/ateroscl
 
 ## A placa de aterosclerose pode regredir?
 
-Parcialmente, sim. Estudos de imagem intravascular (IVUS) demonstraram que tratamento intensivo com estatinas de alta potência, sobretudo quando associado a ezetimiba ou inibidores de PCSK9, pode promover regressão do volume de placa aterosclerótica.
+Parcialmente, sim. Estudos de imagem intravascular (IVUS) demonstraram que tratamento intensivo com estatinas de alta potência, sobretudo quando associado a [ezetimiba](/blog/estatina-e-ezetimiba-juntas-quando-comecar) ou inibidores de PCSK9, pode promover regressão do volume de placa aterosclerótica.
 
 O estudo ASTEROID (JAMA 2006) mostrou que a rosuvastatina em alta dose levou a redução significativa do volume de placa nas coronárias avaliadas por IVUS. O estudo GLAGOV (JAMA 2016) demonstrou que a adição de evolocumabe (inibidor de PCSK9) a estatina produziu regressão adicional de placa em relação à estatina isolada, com maior benefício quanto mais baixo o LDL atingido.
 
@@ -1371,6 +1371,94 @@ Publicado em 01/11/2026 · Revisado em 01/11/2026
 Este artigo é informativo e não substitui a consulta médica.
 
 **Fontes:** Dhurandhar EJ et al., Food noise: definition, measurement, and future research directions, Nutr Diabetes 2025 (doi:10.1038/s41387-025-00382-x). Diktas HE et al., Development and validation of the Food Noise Questionnaire, Obesity 2025 (doi:10.1002/oby.24216). Hayashi D et al., What is food noise? A conceptual model of food cue reactivity, Nutrients 2023 (doi:10.3390/nu15224809). Brewis A et al., Food noise: conceptual, methodological, and ethical considerations, Appetite 2026 (doi:10.1016/j.appet.2026.108700). de Vere Hunt I et al., Patient experiences with GLP-1 receptor agonists, JAMA Netw Open 2026 (doi:10.1001/jamanetworkopen.2026.16951). Naveed M et al., GLP-1 medication and weight loss: barriers and motivators among 1659 participants, Diabetes Obes Metab 2025 (doi:10.1111/dom.16405). Wharton S et al., Obesity in adults: a clinical practice guideline, CMAJ 2020 (doi:10.1503/cmaj.191707). Sumithran P et al., Long-term persistence of hormonal adaptations to weight loss, N Engl J Med 2011 (doi:10.1056/NEJMoa1105816).`,
+  },
+  {
+    id: 21,
+    title: "Estatina e ezetimiba juntas: quando começar com dois remédios para o colesterol",
+    slug: "estatina-e-ezetimiba-juntas-quando-comecar",
+    excerpt: "Entenda quando o médico começa o tratamento do colesterol com estatina e ezetimiba juntas, o que mostram os estudos RACING e FLOWPROMOTE e quais são os cuidados.",
+    categoryId: 5,
+    coverImage: "/estatina-ezetimiba-cover.webp",
+    content: `## Quando começar estatina e ezetimiba juntas?
+
+A combinação de estatina com ezetimiba já no início do tratamento é indicada para quem tem risco alto, muito alto ou extremo de infarto e de AVC (acidente vascular cerebral). É o caso de quem já tem placa nas artérias do coração ou já teve um infarto, segundo a [Diretriz Brasileira de Dislipidemias de 2025](https://doi.org/10.36660/abc.20250640), da Sociedade Brasileira de Cardiologia.
+
+Por muitos anos, o caminho foi outro. Começava-se com a estatina, esperava-se o exame seguinte e só então, se o LDL não chegasse à meta, entrava o segundo remédio. Hoje, para quem tem mais risco, a diretriz brasileira recomenda as duas juntas desde o começo.
+
+## O que a estatina e a ezetimiba fazem?
+
+As duas baixam o LDL, o colesterol que se acumula na parede das artérias, por caminhos diferentes. A estatina diminui a produção de colesterol no fígado. A ezetimiba diminui a absorção do colesterol no intestino.
+
+Por agirem em pontos diferentes, o efeito das duas juntas é maior do que o de qualquer uma sozinha. Se você quer entender o que cada número do exame significa, leia o artigo sobre [colesterol alto e as metas que importam](/blog/colesterol-alto-entenda-os-numeros-e-as-metas-que-realmente-importam).
+
+## Por que juntar dois remédios em vez de aumentar a dose?
+
+Porque a combinação baixa mais o LDL, com menos efeito colateral. O estudo RACING acompanhou 3.780 pacientes com doença aterosclerótica em 26 centros da Coreia do Sul. Ele comparou rosuvastatina 10 mg com ezetimiba 10 mg contra rosuvastatina 20 mg sozinha ([Kim e colaboradores, The Lancet, 2022](https://doi.org/10.1016/S0140-6736(22)00916-3)).
+
+Em três anos, infarto, AVC e morte cardiovascular aconteceram em 9,1% dos pacientes da combinação e em 9,9% dos que usaram só a estatina. Pelo critério do estudo, os dois tratamentos se equivaleram. Com a combinação, 72% dos pacientes estavam com o LDL abaixo de 70 mg/dL no terceiro ano, contra 58% com a estatina sozinha. E só 4,8% precisaram parar ou reduzir o remédio por intolerância, contra 8,2%.
+
+## O que o estudo FLOWPROMOTE mostrou?
+
+Mostrou que a placa nas artérias do coração diminuiu mais quando o LDL ficou mais baixo. O FLOWPROMOTE foi publicado em outubro de 2026. Ele acompanhou 104 pacientes na Dinamarca que tinham acabado de descobrir doença nas coronárias e nunca tinham tomado estatina ([Mortensen e colaboradores, JAMA Cardiology, 2026](https://doi.org/10.1001/jamacardio.2026.4788)).
+
+Metade tomou atorvastatina 40 mg. A outra metade tomou rosuvastatina 40 mg com ezetimiba 10 mg. Todos fizeram angiotomografia de coronárias no começo, aos 9 e aos 18 meses, para medir o volume de placa em todas as artérias do coração.
+
+- O LDL caiu para 69,5 mg/dL com a atorvastatina e para 42,5 mg/dL com a combinação.
+- Em 18 meses, o volume total de placa diminuiu 13,6% com a atorvastatina e 21,1% com a combinação.
+- A placa não calcificada, a parte mais mole e rica em gordura, diminuiu em 77% dos pacientes com atorvastatina e em 98% dos pacientes com a combinação.
+- Quanto mais baixo o LDL alcançado, maior foi a redução da placa.
+
+O estudo tem limites. Foram poucos pacientes, a medida foi de imagem e não de infarto ou morte, e a maioria era de homens brancos. Ainda assim, o resultado vai na mesma direção de estudos anteriores feitos com ultrassom dentro da coronária. Para entender como a placa se forma, leia o artigo sobre [placa de aterosclerose](/blog/placa-de-aterosclerose-o-que-e-como-se-forma-e-se-pode-regredir).
+
+## Quanto mais baixo o LDL, melhor?
+
+Para quem já tem doença nas artérias, as diretrizes dizem que sim, e a meta fica mais baixa quanto maior o risco. As duas principais diretrizes usam números um pouco diferentes:
+
+- A [diretriz brasileira de 2025](https://doi.org/10.36660/abc.20250640) define LDL abaixo de 50 mg/dL no risco muito alto. No risco extremo, a meta é abaixo de 40 mg/dL.
+- A [atualização europeia de 2025](https://doi.org/10.1093/eurheartj/ehaf190), da Sociedade Europeia de Cardiologia e da Sociedade Europeia de Aterosclerose, define LDL abaixo de 55 mg/dL no risco muito alto.
+
+Qual meta vale para você depende da sua história, dos seus exames e da conversa com o seu médico.
+
+## Como eu trato no consultório
+
+No consultório, procuro sempre usar tratamento de alta potência para o colesterol, dando preferência às combinações. Na prática, a dupla mais usada é rosuvastatina com ezetimiba. Quando a meta não é alcançada, sou ainda mais agressivo, e o tratamento pode chegar a três remédios.
+
+Em alguns casos, com esse tratamento agressivo, é possível perceber a placa diminuir. Mas o objetivo principal continua sendo outro. O primeiro é retardar a progressão da doença. O segundo é pacificar a placa, deixando-a menos sujeita a se romper e causar um infarto.
+
+## A combinação tem efeitos colaterais?
+
+Pode ter, como qualquer remédio. No FLOWPROMOTE, os ajustes de dose vieram de dor muscular ou de alteração das enzimas do fígado no exame de sangue. Só 2 dos 104 pacientes pararam a estatina ([Mortensen e colaboradores, JAMA Cardiology, 2026](https://doi.org/10.1001/jamacardio.2026.4788)). No RACING, a combinação teve menos abandono por intolerância do que a estatina em dose maior ([Kim e colaboradores, The Lancet, 2022](https://doi.org/10.1016/S0140-6736(22)00916-3)).
+
+Não pare nem mude a dose por conta própria. Se aparecer um efeito que incomoda, converse com o médico, que pode trocar o remédio ou ajustar a dose.
+
+## Quando procurar o médico
+
+- Seu exame mostrou LDL alto e você nunca conversou sobre tratamento.
+- Você já teve infarto, AVC, stent ou cirurgia de ponte de safena e não sabe qual é a sua meta de LDL.
+- Uma angiotomografia ou um [escore de cálcio](/blog/escore-de-calcio-o-que-e-valores-e-o-que-fazer-com-o-resultado) mostrou placa nas coronárias.
+- Você toma estatina e sente dor muscular que atrapalha a rotina.
+- Você sente dor ou aperto no peito ao fazer esforço. Dor no peito forte, que não passa em repouso, é motivo para ir ao pronto-socorro.
+
+## Perguntas frequentes sobre estatina e ezetimiba
+
+**Estatina e ezetimiba podem ser tomadas no mesmo comprimido?** Sim. Existem combinações em dose fixa no Brasil, e o [painel internacional ILEP](https://doi.org/10.1007/s40265-024-02105-5) recomenda esse formato porque facilita a adesão.
+
+**A ezetimiba substitui a estatina?** Na maioria dos casos, não. As duas trabalham juntas, e a ezetimiba sozinha baixa menos o LDL. O uso sem estatina fica para casos específicos, decididos com o médico.
+
+**Se o LDL chegou na meta, posso parar o remédio?** Não. O LDL está baixo por causa do remédio, e volta a subir quando ele é suspenso.
+
+**A placa some com o tratamento?** Em alguns casos ela diminui, mas não desaparece. O objetivo principal do tratamento é frear o crescimento da placa e deixá-la mais estável. No FLOWPROMOTE, a parte calcificada da placa aumentou de forma parecida nos dois grupos, enquanto a parte mole diminuiu.
+
+## Conversa no consultório
+
+Se você tem placa nas coronárias ou um LDL que não chega à meta, vale revisar o tratamento numa consulta. Atendo em Pinheiros, em São Paulo, pacientes com doença coronária e risco cardiovascular, e o agendamento pode ser feito pelo [WhatsApp do consultório](https://wa.me/5511945556605).
+
+**Dr. Bruno Mioto**, médico cardiologista · CRM 112.007-SP · RQE 89316 (Cardiologia) · RQE 89317 (Clínica Médica)
+Publicado em 03/11/2026 · Revisado em 03/11/2026
+
+Este artigo é informativo e não substitui a consulta médica.
+
+**Fontes:** Mortensen MB et al., Intensive vs More Intensive Lipid-Lowering Therapy and Plaque Regression in Statin-Naive Patients: Prespecified Analyses From the FLOWPROMOTE Randomized Clinical Trial, JAMA Cardiol 2026 (doi:10.1001/jamacardio.2026.4788). Kim BK et al., RACING, Lancet 2022;400:380-390 (doi:10.1016/S0140-6736(22)00916-3). Rached FH et al., Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose 2025, Arq Bras Cardiol 2025;122(9):e20250640 (doi:10.36660/abc.20250640). Mach F et al., 2025 Focused Update of the 2019 ESC/EAS Guidelines for the Management of Dyslipidaemias, Eur Heart J 2025;46:4359-4378 (doi:10.1093/eurheartj/ehaf190). Banach M et al., ILEP 2024, Drugs 2024;84(12):1541-1577 (doi:10.1007/s40265-024-02105-5).`,
   },
 ];
 
