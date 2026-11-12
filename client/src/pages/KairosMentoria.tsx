@@ -13,6 +13,18 @@ import { useEffect } from "react";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdnzjlk";
 
+// Depoimentos dos mentorados, na ordem e com o texto exatamente como aprovado.
+// Só o primeiro nome: este arquivo vai para um repositório público.
+const DEPOIMENTOS = [
+  { nome: "Nayrelle", texto: "A mentoria Kairós me mostrou onde eu estava travando e me deu ferramentas para ganhar tempo e direção. Cheguei com muitas incertezas sobre o rumo do meu consultório e saí com clareza sobre onde eu precisava melhorar, começando pela minha própria mentalidade. As aulas de IA foram sensacionais e transformaram a forma como organizo meu tempo entre consultório, hospital e pesquisa. Recomendo a todo médico que quer crescer com mais estratégia e menos sobrecarga." },
+  { nome: "Ingrid", texto: "Assim como foi proposto no início, a mentoria me ajudou a pular etapas em que, com certeza, eu quebraria a cabeça (e perderia dinheiro) para aprender sozinha, ou que levariam muito mais tempo. A mentoria me ensinou sobre gestão, prospecção de pacientes e uso de IA para facilitar processos, cálculos, planos de acompanhamento, apresentações, marketing, posts, configuração de site e muito mais. Tudo o que consegui aplicar gerou resultados muito positivos, tanto financeiros quanto pessoais." },
+  { nome: "Marco", texto: "Tudo o que eu precisava e nem sabia." },
+  { nome: "Jessika", texto: "Projeto lindo e gratificante! É visível a paixão do Bruno em ensinar e falar sobre o que ele gosta e domina. Sempre muito solícito e à disposição para ajudar, mesmo com um milhão de coisas para fazer. A Kairós me ajudou a tirar do papel os projetos que eu tinha e estimulou minha organização profissional e pessoal!" },
+  { nome: "Leandro", texto: "A mentoria é excelente, fundamentada na medicina baseada em evidências. Proporciona resultados concretos, contribuindo diretamente para a evolução profissional e a qualidade da assistência aos pacientes." },
+  { nome: "André", texto: "Ambiente muito rico e acolhedor, que me ajudou a crescer muito e a ter um olhar mais técnico para o meu consultório, além de me deixar sempre motivado a crescer e buscar melhorias no âmbito profissional." },
+  { nome: "Carlo", texto: "Mentoria, conteúdo e mentalidade de altíssima qualidade! Parabéns pelo trabalho, Bruno. Deu para perceber o quanto você estava feliz e convicto no que estava fazendo, e acredito que vai ajudar muita gente, assim como me ajudou!" },
+];
+
 export default function KairosMentoria() {
   useEffect(() => {
     document.title = "Kairós — Mentoria para Médicos | Dr. Bruno Mioto";
@@ -178,6 +190,21 @@ export default function KairosMentoria() {
         </div>
       </section>
 
+      {/* DEPOIMENTOS */}
+      <section className="klp-deps" id="depoimentos">
+        <div className="klp-wrap">
+          <h2>O que dizem os mentorados</h2>
+          <div className="klp-depgrid">
+            {DEPOIMENTOS.map((d) => (
+              <figure className={d.texto.length < 80 ? "klp-dep klp-dep-curto" : "klp-dep"} key={d.nome}>
+                <blockquote><span className="aspa">“</span>{d.texto}<span className="aspa">”</span></blockquote>
+                <figcaption>{d.nome}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FORMULÁRIO */}
       <section className="klp-signup" id="interesse">
         <div className="klp-wrap">
@@ -330,6 +357,20 @@ const cssString = `
 .klp-creds li{list-style:none; font-size:15.5px; color:#4A5364; padding:7px 0 7px 22px; position:relative;}
 .klp-creds li:before{content:''; position:absolute; left:0; top:15px; width:8px; height:1.5px; background:var(--gold);}
 
+/* DEPOIMENTOS */
+.klp-deps{background:var(--osso); border-top:1px solid rgba(13,27,53,.1);}
+.klp-deps h2{font-size:44px; color:var(--navy); margin-bottom:52px;}
+.klp-depgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.klp-dep{background:#fff; border:1px solid rgba(13,27,53,.1); border-top:3px solid var(--gold); padding:34px 30px 30px; display:flex; flex-direction:column; justify-content:space-between; gap:24px;}
+.klp-dep .aspa{font-family:var(--serif); color:var(--gold); font-size:1.25em; line-height:0;}
+.klp-dep blockquote{font-size:16px; font-weight:300; line-height:1.7; color:#38404F;}
+.klp-dep-curto blockquote{font-family:var(--serif); font-size:30px; line-height:1.3; color:var(--navy); margin:auto 0;}
+.klp-dep figcaption{font-family:var(--serif); font-size:20px; color:var(--navy); padding-top:18px; border-top:1px solid rgba(13,27,53,.1);}
+/* O sétimo fecha a grade na largura toda, para não sobrar um card sozinho num canto */
+.klp-dep:last-child{grid-column:1/-1;}
+.klp-dep:last-child blockquote{max-width:760px;}
+@media(max-width:1024px){ .klp-depgrid{grid-template-columns:1fr 1fr;} }
+
 /* FORM */
 .klp-signup{background:var(--navy); color:var(--osso);}
 .klp-signhead{text-align:center; max-width:620px; margin:0 auto 48px;}
@@ -371,6 +412,8 @@ const cssString = `
   .klp-about-grid{grid-template-columns:1fr; gap:32px;}
   .klp-about-photo{order:2;}
   .klp-row2{grid-template-columns:1fr;}
+  .klp-deps h2{font-size:32px; margin-bottom:36px;}
+  .klp-depgrid{grid-template-columns:1fr;}
   .klp-brand .wm{font-size:17px;}
 }
 `;
