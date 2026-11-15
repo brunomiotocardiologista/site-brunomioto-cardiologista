@@ -515,7 +515,7 @@ Nos últimos anos, novos medicamentos antidiabéticos mostraram benefício cardi
 
 **Inibidores de SGLT-2 (empagliflozina, dapagliflozina):** reduzem hospitalização por insuficiência cardíaca e mortalidade cardiovascular. Hoje são usados também em pacientes com insuficiência cardíaca sem diabetes.
 
-**Análogos de GLP-1 (semaglutida, liraglutida):** além do controle glicêmico e perda de peso, reduzem eventos cardiovasculares maiores em pacientes de alto risco.
+**Análogos de GLP-1 (semaglutida, liraglutida):** além do controle glicêmico e perda de peso, [reduzem eventos cardiovasculares maiores](/blog/canetas-para-obesidade-e-coracao) em pacientes de alto risco.
 
 A escolha do antidiabético não deve considerar apenas o controle glicêmico — deve levar em conta o perfil cardiovascular do paciente.
 
@@ -577,7 +577,7 @@ A boa notícia: mesmo perdas modestas de peso (5–10% do peso corporal) produze
 
 O tratamento da obesidade é multidisciplinar. A dieta e o exercício são a base, mas em muitos casos precisam ser complementados por:
 
-**Medicamentos antiobesidade:** como semaglutida (GLP-1), que além de promover perda de peso tem benefícios cardiovasculares comprovados. Um dos efeitos que os pacientes mais relatam com esses remédios é a diminuição do [food noise, o barulho da comida](/blog/food-noise-barulho-da-comida).
+**Medicamentos antiobesidade:** como semaglutida (GLP-1), que além de promover perda de peso tem [benefícios cardiovasculares comprovados](/blog/canetas-para-obesidade-e-coracao). Um dos efeitos que os pacientes mais relatam com esses remédios é a diminuição do [food noise, o barulho da comida](/blog/food-noise-barulho-da-comida).
 
 **Cirurgia bariátrica:** para pacientes com IMC ≥ 40, ou ≥ 35 com comorbidades, quando o tratamento clínico falhou. A cirurgia bariátrica reduz significativamente eventos cardiovasculares em longo prazo.
 
@@ -1349,7 +1349,7 @@ Para quem tem obesidade, cuidar do apetite também é cuidar do coração. A rel
 - Há episódios de comer muito, com sensação de perda de controle.
 - Você come escondido, vomita, usa laxante ou usa algum remédio para "compensar" o que comeu. Esses sinais pedem avaliação para transtorno alimentar.
 - O excesso de peso vem junto com pressão alta, glicose alterada, apneia do sono ou dor nas articulações.
-- Você pensa em começar um remédio para obesidade. A semaglutida e a tirzepatida exigem prescrição, avaliação e acompanhamento.
+- Você pensa em começar um remédio para obesidade. A semaglutida e a tirzepatida exigem prescrição, avaliação e acompanhamento. O que elas fazem pelo coração está no artigo sobre [canetas para obesidade e coração](/blog/canetas-para-obesidade-e-coracao).
 
 ## Perguntas frequentes sobre food noise
 
@@ -1459,6 +1459,119 @@ Publicado em 03/11/2026 · Revisado em 03/11/2026
 Este artigo é informativo e não substitui a consulta médica.
 
 **Fontes:** Mortensen MB et al., Intensive vs More Intensive Lipid-Lowering Therapy and Plaque Regression in Statin-Naive Patients: Prespecified Analyses From the FLOWPROMOTE Randomized Clinical Trial, JAMA Cardiol 2026 (doi:10.1001/jamacardio.2026.4788). Kim BK et al., RACING, Lancet 2022;400:380-390 (doi:10.1016/S0140-6736(22)00916-3). Rached FH et al., Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose 2025, Arq Bras Cardiol 2025;122(9):e20250640 (doi:10.36660/abc.20250640). Mach F et al., 2025 Focused Update of the 2019 ESC/EAS Guidelines for the Management of Dyslipidaemias, Eur Heart J 2025;46:4359-4378 (doi:10.1093/eurheartj/ehaf190). Banach M et al., ILEP 2024, Drugs 2024;84(12):1541-1577 (doi:10.1007/s40265-024-02105-5).`,
+  },
+  {
+    id: 22,
+    title: "Canetas para obesidade fazem bem ao coração? O que os estudos mostram",
+    slug: "canetas-para-obesidade-e-coracao",
+    excerpt: "Canetas para obesidade e coração: em quem a semaglutida e a tirzepatida reduzem infarto e AVC, o efeito na insuficiência cardíaca e os cuidados.",
+    categoryId: 2,
+    coverImage: "/canetas-coracao-cover.webp",
+    content: `## As canetas para obesidade fazem bem ao coração?
+
+As canetas para obesidade fazem bem ao coração de quem já tem doença nas artérias e está acima do peso. No estudo SELECT, a semaglutida semanal diminuiu o risco de infarto, AVC (acidente vascular cerebral) e morte cardiovascular. Os pacientes do estudo não tinham diabetes ([Lincoff e colaboradores, New England Journal of Medicine, 2023](https://doi.org/10.1056/NEJMoa2307563)).
+
+Em quem ainda não tem doença cardiovascular, esse benefício ainda não foi provado. As canetas tratam a obesidade nesse grupo, mas a redução de infarto ainda depende de estudos em andamento.
+
+## O que são as canetas para obesidade?
+
+São remédios que imitam hormônios produzidos pelo intestino depois da refeição. Esses hormônios aumentam a saciedade e ajudam a controlar o açúcar no sangue. Os dois mais usados são a semaglutida e a tirzepatida. A semaglutida age no receptor do GLP-1 (peptídeo semelhante ao glucagon 1). A tirzepatida age no GLP-1 e também no GIP (polipeptídeo insulinotrópico dependente de glicose).
+
+A aplicação é uma injeção por semana, com caneta. A semaglutida também existe em comprimido diário. Em 4 de novembro de 2026, a [Anvisa aprovou a semaglutida oral para o tratamento da obesidade](https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-primeiro-medicamento-de-glp-1-oral-para-obesidade) no Brasil. A aprovação se apoiou no estudo OASIS 4, que testou a dose de 25 mg ([Wharton e colaboradores, New England Journal of Medicine, 2025](https://doi.org/10.1056/NEJMoa2500969)). Até então, para obesidade, ela só existia como injeção.
+
+## As canetas diminuem o risco de infarto e AVC?
+
+Diminuem em quem já tem doença cardiovascular. O SELECT acompanhou 17.604 pessoas por cerca de três anos e quatro meses. Para entrar no estudo, era preciso ter 45 anos ou mais e já ter tido infarto, AVC ou doença nas artérias das pernas. Também era preciso ter IMC (índice de massa corporal) de 27 ou mais e não ter diabetes.
+
+IMC de 27 fica na faixa do sobrepeso, abaixo da obesidade. Ou seja, o estudo incluiu também quem tinha poucos quilos a mais.
+
+- Metade usou semaglutida 2,4 mg por semana. A outra metade usou placebo.
+- Infarto, AVC ou morte cardiovascular aconteceram em 6,5% dos pacientes da semaglutida e em 8,0% dos que usaram placebo.
+- Isso corresponde a 20% menos eventos.
+
+A [diretriz europeia de síndromes coronarianas crônicas de 2024](https://doi.org/10.1093/eurheartj/ehae177), da Sociedade Europeia de Cardiologia, recomenda considerar a semaglutida na doença coronária crônica. Vale para quem não tem diabetes e tem IMC de 27 ou mais. A [Diretriz Brasileira de Síndrome Coronariana Crônica de 2025](https://doi.org/10.36660/abc.20250619), da Sociedade Brasileira de Cardiologia, vai na mesma direção. Se você quer entender como o peso pesa sobre o coração, leia o artigo sobre [obesidade e coração](/blog/obesidade-e-coracao-como-o-excesso-de-peso-afeta-a-saude-cardiovascular).
+
+## E quem tem diabetes tipo 2?
+
+Para quem tem diabetes e doença nas artérias, o benefício também foi demonstrado, mesmo sem obesidade. No estudo SOUL, a semaglutida em comprimido foi testada em 9.650 pessoas com diabetes. Todas tinham doença nas artérias, doença renal crônica ou as duas ([McGuire e colaboradores, New England Journal of Medicine, 2025](https://doi.org/10.1056/NEJMoa2501006)). Infarto, AVC ou morte cardiovascular aconteceram em 12,0% com o remédio e em 13,8% com placebo.
+
+A tirzepatida foi comparada com a dulaglutida, outro remédio da mesma família que já tinha mostrado proteger o coração. O estudo SURPASS-CVOT incluiu 13.165 pacientes com diabetes e doença nas artérias. Os eventos aconteceram em 12,2% com a tirzepatida e em 13,1% com a dulaglutida ([Nicholls e colaboradores, New England Journal of Medicine, 2025](https://doi.org/10.1056/NEJMoa2505928)). Pelo critério do estudo, a tirzepatida foi pelo menos tão boa quanto a dulaglutida, sem diferença estatística a favor de uma delas.
+
+A relação entre açúcar no sangue e coração está no artigo sobre [diabetes e coração](/blog/diabetes-e-coracao-por-que-o-controle-glicemico-e-fundamental-na-cardiologia).
+
+## O benefício vem só da perda de peso?
+
+Não parece. Uma análise do próprio SELECT mostrou que a proteção apareceu em todas as faixas de peso. Ela também não acompanhou a quantidade de quilos perdidos ([Deanfield e colaboradores, The Lancet, 2025](https://doi.org/10.1016/S0140-6736(25)01375-3)). A redução da cintura explicou cerca de um terço do benefício.
+
+O restante deve vir de outros efeitos do remédio, ainda em estudo. Na prática, isso quer dizer que quem perde pouco peso também pode ter o coração protegido.
+
+## As canetas ajudam na insuficiência cardíaca?
+
+Ajudam quem tem insuficiência cardíaca com fração de ejeção preservada e obesidade. Nesse tipo de insuficiência cardíaca, o coração contrai bem, mas fica rígido e se enche mal.
+
+- No estudo STEP-HFpEF, 529 pacientes com IMC de 30 ou mais usaram semaglutida ou placebo por um ano. Com a semaglutida, os sintomas e a distância caminhada em seis minutos melhoraram mais ([Kosiborod e colaboradores, New England Journal of Medicine, 2023](https://doi.org/10.1056/NEJMoa2306963)).
+- No estudo SUMMIT, 731 pacientes usaram tirzepatida ou placebo. Morte cardiovascular ou piora da insuficiência cardíaca aconteceram em 9,9% com a tirzepatida e em 15,3% com placebo ([Packer e colaboradores, New England Journal of Medicine, 2025](https://doi.org/10.1056/NEJMoa2410027)).
+
+A [Diretriz Brasileira de Insuficiência Cardíaca de 2026](https://doi.org/10.36660/abc.20260830), da Sociedade Brasileira de Cardiologia, recomenda as duas para esses pacientes. Para entender a doença, leia o artigo sobre [insuficiência cardíaca](/blog/insuficiencia-cardiaca-o-que-e-sintomas-e-tratamento).
+
+## E quem tem obesidade, mas não tem doença no coração?
+
+Nesse grupo, a redução de infarto e AVC ainda não foi provada. O estudo que testa isso com a tirzepatida, o SURMOUNT-MMO, ainda não publicou resultado ([registro NCT05556512 no ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT05556512)).
+
+Isso não impede o tratamento. A obesidade é uma doença crônica, e o remédio pode ser indicado por ela e pelas doenças que vêm junto, como pressão alta, apneia do sono e diabetes. O que ainda não se pode dizer é que ele previne o primeiro infarto.
+
+## As canetas podem prejudicar o coração?
+
+Nos grandes estudos, não. No SELECT, no SOUL e no SURPASS-CVOT, os eventos cardiovasculares foram iguais ou menores com o remédio do que no grupo comparado. No SOUL, os efeitos adversos graves aconteceram em 47,9% com a semaglutida e em 50,3% com placebo.
+
+O risco maior está fora dos estudos. A Anvisa tem [alertado sobre canetas manipuladas e importadas de forma irregular](https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-anuncia-novas-medidas-de-combate-a-irregularidades-na-importacao-e-manipulacao-de-canetas-emagrecedoras), sem controle do que há dentro delas. Remédio com registro, prescrito e acompanhado é o que foi testado.
+
+## Quais são os efeitos colaterais?
+
+Os mais comuns são do estômago e do intestino: náusea, vômito, diarreia e intestino preso. No SELECT, 16,6% dos pacientes pararam a semaglutida por efeito adverso, contra 8,2% no placebo. No SUMMIT, 6,3% pararam a tirzepatida, contra 1,4% no placebo.
+
+Quando o remédio é suspenso, o peso tende a voltar. O corpo, depois de emagrecer, muda os hormônios da fome de um jeito que aumenta o apetite, como explico no artigo sobre o [food noise, o barulho da comida](/blog/food-noise-barulho-da-comida). Por isso o tratamento da obesidade é contínuo, e a caneta é uma parte dele.
+
+## Como funciona no consultório
+
+Obesidade e cardiometabolismo são temas que estudo e sobre os quais dou palestras, com cursos internacionais sobre o assunto em Boston e em Frankfurt.
+
+No consultório, a indicação segue o perfil dos pacientes do SELECT: doença cardiovascular já estabelecida e IMC de 27 ou mais. Quando há diabetes junto, a indicação fica ainda mais forte, mesmo sem obesidade.
+
+A caneta não entra sozinha. No plano de acompanhamento de obesidade, a nutricionista entra no grupo de WhatsApp com o paciente. A pergunta que mais ouço é "as canetas podem prejudicar o coração?". Para quem já tem doença nas artérias, os estudos respondem que o efeito vai na direção contrária.
+
+## Quando procurar o médico?
+
+- Você já teve infarto, colocou stent, fez cirurgia de ponte de safena ou teve AVC, e está acima do peso.
+- Você tem diabetes tipo 2 e doença no coração, nas artérias ou nos rins.
+- Você tem insuficiência cardíaca e obesidade.
+- Você pensa em começar uma caneta ou um comprimido para obesidade. Os dois exigem prescrição, avaliação e acompanhamento.
+- Você já usa e tem vômito que não passa, dor forte na barriga ou sinais de desidratação, como boca seca e pouca urina.
+
+## Perguntas frequentes sobre canetas e coração
+
+**Posso usar caneta sem prescrição?**
+Não. A semaglutida e a tirzepatida exigem receita, e a dose é ajustada aos poucos pelo médico. Produto sem registro na Anvisa não passou pela conferência de qualidade da agência.
+
+**A caneta substitui a estatina e os outros remédios do coração?**
+Não. Nos estudos, os pacientes continuaram com o tratamento que já usavam, como estatina, aspirina e remédios para pressão. A caneta entra somada a eles.
+
+**Se eu parar, o benefício para o coração continua?**
+Os estudos mediram o benefício enquanto o remédio era usado. Depois de suspenso, o peso tende a voltar, e não há prova de que a proteção continue.
+
+**A semaglutida em comprimido protege o coração como a injeção?**
+No diabetes tipo 2 com doença nas artérias, o comprimido reduziu infarto, AVC e morte cardiovascular no estudo SOUL. Na obesidade sem diabetes, o benefício para o coração foi provado com a injeção, no SELECT, e o comprimido ainda não foi testado com esse objetivo.
+
+## Conversa no consultório
+
+Se você tem doença no coração e está acima do peso, ou tem dúvida se a caneta faz sentido para você, vale conversar. Atendo no consultório em Pinheiros, em São Paulo, e a decisão sobre o tratamento é feita junto com você, pesando a sua história, os seus exames e a sua preferência.
+
+**Dr. Bruno Mioto**, médico cardiologista · CRM 112.007-SP · RQE 89316 (Cardiologia) · RQE 89317 (Clínica Médica)
+Publicado em 15/11/2026 · Revisado em 15/11/2026
+
+Este artigo é informativo e não substitui a consulta médica.
+
+**Fontes:** Lincoff AM et al., Semaglutide and cardiovascular outcomes in obesity without diabetes, N Engl J Med 2023 (doi:10.1056/NEJMoa2307563). Deanfield J et al., Semaglutide and cardiovascular outcomes by baseline and changes in adiposity measurements: a prespecified analysis of the SELECT trial, Lancet 2025 (doi:10.1016/S0140-6736(25)01375-3). McGuire DK et al., Oral semaglutide and cardiovascular outcomes in high-risk type 2 diabetes, N Engl J Med 2025 (doi:10.1056/NEJMoa2501006). Nicholls SJ et al., Cardiovascular outcomes with tirzepatide versus dulaglutide in type 2 diabetes, N Engl J Med 2025 (doi:10.1056/NEJMoa2505928). Kosiborod MN et al., Semaglutide in patients with heart failure with preserved ejection fraction and obesity, N Engl J Med 2023 (doi:10.1056/NEJMoa2306963). Packer M et al., Tirzepatide for heart failure with preserved ejection fraction and obesity, N Engl J Med 2025 (doi:10.1056/NEJMoa2410027). Wharton S et al., Oral semaglutide at a dose of 25 mg in adults with overweight or obesity, N Engl J Med 2025 (doi:10.1056/NEJMoa2500969). Vrints C et al., 2024 ESC Guidelines for the management of chronic coronary syndromes, Eur Heart J 2024 (doi:10.1093/eurheartj/ehae177). Cesar LAM et al., Diretriz de Síndrome Coronariana Crônica, Arq Bras Cardiol 2025 (doi:10.36660/abc.20250619). Simões MV et al., Diretriz Brasileira de Insuficiência Cardíaca 2026, Arq Bras Cardiol 2026 (doi:10.36660/abc.20260830). Todos os estudos citados foram financiados pelos fabricantes dos remédios.`,
   },
 ];
 
