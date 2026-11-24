@@ -228,14 +228,14 @@ export default function AppointmentSection() {
                   Ligar: (11) 3063-4890
                 </a>
                 <a
-                  href="tel:+5511982850031"
+                  href="tel:+551130634942"
                   className="flex items-center justify-center gap-2 py-3.5 text-sm font-medium transition-opacity hover:opacity-80"
                   style={{ border: "1px solid var(--medical-blue)", color: "var(--medical-blue)", fontFamily: "'Inter', sans-serif", letterSpacing: "0.05em", background: "transparent" }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  Ligar: (11) 98285-0031
+                  Ligar: (11) 3063-4942
                 </a>
               </div>
               <p className="text-center text-xs" style={{ color: "var(--ink-muted)", fontFamily: "'Inter', sans-serif" }}>

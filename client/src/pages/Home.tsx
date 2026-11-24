@@ -527,9 +527,9 @@ export default function Home() {
                   },
                   {
                     icon: <Phone className="w-5 h-5" />,
-                    title: "Telefone Celular",
-                    content: "(11) 98285-0031",
-                    href: "tel:+5511982850031",
+                    title: "Telefone Fixo",
+                    content: "(11) 3063-4942",
+                    href: "tel:+551130634942",
                   },
                   {
                     icon: (

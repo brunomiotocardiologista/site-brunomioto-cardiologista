@@ -121,8 +121,8 @@ export default function Footer() {
                   <a href="tel:+551130634890" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(70% 0.03 240)", fontFamily: "'Inter', sans-serif" }}>
                     (11) 3063-4890
                   </a>
-                  <a href="tel:+5511982850031" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(70% 0.03 240)", fontFamily: "'Inter', sans-serif" }}>
-                    (11) 98285-0031
+                  <a href="tel:+551130634942" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(70% 0.03 240)", fontFamily: "'Inter', sans-serif" }}>
+                    (11) 3063-4942
                   </a>
                 </div>
               </div>
